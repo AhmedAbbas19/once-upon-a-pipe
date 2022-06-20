@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "once-upon-a-pipe": {
+      "projectType": "library",
+      "root": "projects/once-upon-a-pipe",
+      "sourceRoot": "projects/once-upon-a-pipe/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/once-upon-a-pipe/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/once-upon-a-pipe/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/once-upon-a-pipe/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/once-upon-a-pipe/src/test.ts",
+            "tsConfig": "projects/once-upon-a-pipe/tsconfig.spec.json",
+            "karmaConfig": "projects/once-upon-a-pipe/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "once-upon-a-pipe"
+}
