@@ -1,7 +1,16 @@
 {
   "name": "once-upon-a-pipe",
   "version": "0.1.1",
-  "author": "Ahmed Abbas",
+  "author": {
+    "name": "Ahmed Abbas",
+    "email": "ahmeddabbas19@gmail.com",
+    "url": "https://www.linkedin.com/in/ahmeddabbas"
+  },
+  "homepage": "https://github.com/AhmedAbbas19/once-upon-a-pipe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmedAbbas19/once-upon-a-pipe"
+  },
   "keywords": [
     "angular",
     "angular-pipe",
@@ -17,5 +26,6 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "license": "MIT"
 }
